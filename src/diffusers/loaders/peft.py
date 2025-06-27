@@ -479,7 +479,7 @@ class PeftAdapterMixin:
 
         # e.g. [{...}, 7] -> [{expanded dict...}, 7]
         scale_expansion_fn = _SET_ADAPTER_SCALE_FN_MAPPING[self.__class__.__name__]
-        weights = scale_expansion_fn(self, weights)
+        #weights = scale_expansion_fn(self, weights)
 
         set_weights_and_activate_adapters(self, adapter_names, weights)
 
